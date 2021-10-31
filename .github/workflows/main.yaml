@@ -16,7 +16,7 @@ jobs:
         with:
           python-version: '3.6'
  
-      - run: 
+      - run: |
           pip3 install --upgrade virtualenv
           virtualenv env
           source env/bin/activate
@@ -34,7 +34,7 @@ jobs:
         with:
           python-version: '3.6'
  
-      - run: 
+      - run: |
           pip3 install --upgrade virtualenv
           virtualenv env
           source env/bin/activate
@@ -54,4 +54,3 @@ jobs:
     needs: integration
     steps:
       - run: echo "This is a deploy step."
-
