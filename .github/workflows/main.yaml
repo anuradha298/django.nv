@@ -16,7 +16,7 @@ jobs:
         with:
           python-version: '3.6'
  
-      - run: 
+      - run: |
           pip3 install --upgrade virtualenv
           virtualenv env
           source env/bin/activate
